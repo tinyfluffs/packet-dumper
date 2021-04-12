@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "org.junglemc.dumper.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+  ],
+  "client": [
+    "ClientConnectionMixin",
+    "DecodeHandlerMixin"
+  ],
+  "server": [
+    "ClientConnectionMixin",
+    "DecodeHandlerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,37 +1,32 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "packet-dumper",
   "version": "${version}",
-
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "JungleMC Packet Dumper",
+  "description": "Dumps packet data from the client or server",
   "authors": [
-    "Me!"
+    "JungleMC",
+    "Ella Fox"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://fox.gal",
+    "sources": "https://github.com/junglemc/packet-dumper/"
   },
-
-  "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
-
+  "license": "MIT",
+  "icon": "assets/packet-dumper/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "org.junglemc.dumper.PacketDumperMod"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "packet-dumper.mixins.json"
   ],
-
   "depends": {
     "fabricloader": ">=0.7.4",
     "fabric": "*",
     "minecraft": "1.16.x"
   },
-  "suggests": {
-    "another-mod": "*"
-  }
+  "suggests": {}
 }
